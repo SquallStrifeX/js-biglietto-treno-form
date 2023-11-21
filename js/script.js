@@ -1,7 +1,26 @@
-let km = prompt("Quanti km devi percorrere?");
+// let km = prompt("Quanti km devi percorrere?");
+// console.log(km);
+
+// let eta = prompt("Qual è la tua età?");
+// console.log(eta);
+
+let km;
+
+let eta;
+
+const button = document.querySelector(".btn");
+
+button.addEventListener("click", function(){
+
+km = document.getElementById("km").value;
+
+
+eta = document.getElementById("eta").value;
+
+} )
+
 console.log(km);
 
-let eta = prompt("Qual è la tua età?");
 console.log(eta);
 
 let prezzo = km * 0.21;
@@ -19,15 +38,7 @@ else{
     prezzo_finale = prezzo
 }
 
+document.getElementById("prezzo_finale").innerText = prezzo_finale
+
 console.log(prezzo_finale);
 
-const button = document.querySelector(".btn");
-
-button.addEventListener("click", function(){
-
-let nome = document.getElementById("Nome").value
-console.log(nome)
-
-let cognome = document.getElementById("Cognome").value
-console.log(cognome)
-} )
