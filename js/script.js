@@ -21,3 +21,13 @@ else{
 
 console.log(prezzo_finale);
 
+const button = document.querySelector(".btn");
+
+button.addEventListener("click", function(){
+
+let nome = document.getElementById("Nome").value
+console.log(nome)
+
+let cognome = document.getElementById("Cognome").value
+console.log(cognome)
+} )
